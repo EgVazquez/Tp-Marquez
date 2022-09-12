@@ -16,7 +16,7 @@ switch($_POST['tipo']) {
         //Polimorfismo: No sabemos si $cuenta es CajaAhorro o CuentaCorriente,
         //pero igualmente le enviamos el mensaje extraer, que hará lo correcto
         //en cualquiera de los dos casos:
-        $mensaje=$cuenta->extraer($_POST['monto']);
+        $mensaje=$cuenta->extraer($_POST['monto']);   
         break;
     case 'd':
         //Polimorfismo con el mensaje depositar:
